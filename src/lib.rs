@@ -1,7 +1,8 @@
 use std::{env, fs};
 
 use abi_stable::std_types::{ROption, RString, RVec};
-use anyrun_plugin::*;
+use anyrun_interface::{HandleResult, Match, PluginInfo};
+use anyrun_macros::{get_matches, handler, info, init};
 use fuzzy_matcher::FuzzyMatcher;
 use randr::{dummy::Dummy, hyprland::Hyprland, Configure, Monitor, Randr};
 use serde::Deserialize;
